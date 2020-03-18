@@ -203,3 +203,4 @@ galera_server_extra_package_validate_certs: yes
 galera_datadir: "/var/lib/mysql"
 galera_tmpdir: "/var/lib/mysql"
 galera_logbindir: "/var/lib/mysql/mariadb-bin"
+galera_logbin_index: "{{ galera_logbindir }}/logbin.index"

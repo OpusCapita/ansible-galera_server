@@ -43,8 +43,9 @@ ssl-key = {{ galera_ssl_key }}
 # LOGGING #
 log-queries-not-using-indexes = {{ galera_unindexed_query_logging }}
 slow-query-log = {{ galera_slow_query_logging }}
-log-bin = {{ galera_logbindir }}
-log-bin-index = {{ galera_logbindir }}.index
+log-bin = {{ galera_logbindir }}/mariadb-logbin
+log-bin-index = {{ galera_logbin_index }}
+
 expire-logs-days = 7
 log_slave_updates = 1
 log_bin_trust_function_creators = 1
