@@ -80,6 +80,10 @@
   with_items:
     - { path: "/var/lib/mysql", owner: "mysql", mode: "02755" }
     - { path: "/etc/mysql/conf.d" }
+    - { path: "{{ galera_datadir }}", owner: "mysql", mode: "0750" }
+    - { path: "{{ galera_tmpdir }}", owner: "mysql", mode: "0750" }
+    - { path: "{{ galera_logbindir }}", owner: "mysql", mode: "0750" }
+    
 
 - include_tasks: galera_ssl.yml
   when:

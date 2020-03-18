@@ -198,3 +198,8 @@ galera_server_extra_package_path: "/opt/cache/files"
 
 # Toggle whether certificate validation should be enabled/disabled
 galera_server_extra_package_validate_certs: yes
+
+# Data path
+galera_datadir: "/var/lib/mysql"
+galera_tmpdir: "/var/lib/mysql"
+galera_logbindir: "/var/lib/mysql/mariadb-bin"
