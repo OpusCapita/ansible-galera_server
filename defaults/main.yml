@@ -24,7 +24,7 @@ galera_upgrade: false
 galera_force_bootstrap: false
 
 galera_wsrep_node_name: "{{ inventory_hostname }}"
-galera_cluster_name: openstack_galera_cluster
+galera_cluster_name: mysql-ha-transactions
 
 # The galera server-id should be set on all cluster nodes to ensure
 #  that replication is handled correctly and the error
